@@ -1,0 +1,418 @@
+body{
+    margin:0;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1,
+#myCarousel,
+.carousel-inner{
+  position: relative;
+  height: 500px;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+
+.carousel-inner .item {
+  height: 500px !important;
+  width: 100% !important;
+}
+
+.carousel-inner .item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Locks structural symmetry without elongation distortion */
+  object-position: center !important;
+}
+
+.carousel-static-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(17, 76, 51, 0.7) 0%, rgba(17, 76, 51, 0.5) 45%, rgba(17, 76, 51, 0.2) 75%, rgba(0, 0, 0, 0) 100%) !important;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.welcome-tag{
+    color: #e09e22;
+    padding: 20px !important;
+    font-size: 25px;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    display: inline-block !important;
+    margin-bottom: 15px !important;
+    letter-spacing: 0.5px;
+}
+
+.overlay-content h1{
+    font-family: 'Georgia', serif;
+    font-size: 52px;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    line-height: 1.15;
+}
+
+.overlay-content p {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ebdcb9 !important;
+  margin: 0 0 35px 0 !important;
+}
+
+.cta-button-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px;
+ 
+}
+
+.btn-shop-now {
+  background-color: #e59b3c !important; 
+  color: #114c33 !important;           
+  padding: 14px 28px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none !important;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-shop-now:hover {
+  background-color: #cd852b !important;
+  transform: translateY(-2px);
+}
+
+.btn-explore-services {
+  background-color: #e59b3c !important;
+  color: #114c33 !important;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none !important;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn-explore-services:hover {
+  transform: translateX(4px); 
+}
+
+.carousel-caption h3 {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.carousel-caption p {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #f7ecd7;
+}
+
+.small-boxes{
+  display: flex !important;
+  gap: 15px !important;
+  padding: 5px 80px 5px 80px;
+  flex-wrap: wrap;
+}
+
+.small-individual{
+  width: 250px;
+   border-radius: 10px;
+  background-color: #f4f7ef;
+  padding: 15px;
+}
+
+.small-individual h6{
+  color: #114c33;
+}
+
+.small-individual p{
+  color: #7c8475;
+  font-size: 14px;
+}
+
+.products-box{
+  display: block;
+  background-color: #f7f6f5;
+  padding-bottom: 20px;
+}
+
+.products-headings{
+  justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.products-headings h5{
+  color: #e09e22;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.products-headings h2{
+  color: #0b6741;
+  font-size: 35px;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+}
+
+.products-headings p{
+  color: #7c8475;
+  font-size: 17px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.product-grid{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+.btn-products{
+  display: block !important;
+  background-color: #e59b3c;
+  color: #114c33;
+  text-align: center !important;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+  max-width: 200px;
+  margin: 15px auto 0 auto !important;
+}
+
+.btn-products:hover {
+  background-color: #e47637;
+  color: #114c33;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(192, 92, 35, 0.3); 
+}
+
+.services-box{
+  display: block;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.services-heading{
+  justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.service-grid{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.service-card{
+  display: block !important;
+  flex-direction: row-reverse !important; 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eadecc;
+  height: 430px; 
+  width: 400px;
+   background-color: #f7f6f5;
+}
+
+.service-image{
+  flex: 0 0 250px !important;
+  height: 280px;
+}
+
+.service-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.service-details{
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-title{
+  font-family: 'Cinzel', serif;;
+  font-size: 20px;
+  font-weight: bold;
+  color: #114c33;
+  margin: 3px 0;
+}
+
+.service-description{
+    font-size: 12px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+.services-heading h5{
+  color: #e09e22;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.services-heading h2{
+  color: #0b6741;
+  font-size: 35px;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+}
+
+.services-heading p{
+  color: #7c8475;
+  font-size: 17px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.btn-services{
+    font-size: 15px !important;
+    color: #1c7930 !important;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.btn-services:hover{
+  color: #114c33 !important;
+  transform: translateY(-2px);
+   
+}
+
+.arrow-btn{
+  font-size: 20px !important;
+}
+
+#myCarousel .carousel-inner .item {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important; 
+    opacity: 0;  
+    transform: none !important;
+    transition: none !important;
+    animation: continuousBackgroundSlideshow 25s linear infinite !important;
+}
+
+/* Staggers the animation delays so each item appears in sequence */
+#myCarousel .carousel-inner .item:nth-child(1) {
+    animation-delay: 0s !important;
+}
+#myCarousel .carousel-inner .item:nth-child(2) {
+    animation-delay: 5s !important;
+}
+#myCarousel .carousel-inner .item:nth-child(3) {
+    animation-delay: 10s !important;
+}
+#myCarousel .carousel-inner .item:nth-child(4) {
+    animation-delay: 15s !important;
+}
+#myCarousel .carousel-inner .item:nth-child(5) {
+    animation-delay: 20s !important;
+}
+
+/* SMOOTH CROSS-FADE TIMING SEQUENCER */
+@keyframes continuousBackgroundSlideshow {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    4% {
+        opacity: 1; /* Fades smoothly into focus view */
+        z-index: 2; /* Lifts it to the front layer */
+    }
+    20% {
+        opacity: 1; /* Holds item perfectly visible on screen */
+    }
+    24% {
+        opacity: 0; /* Gracefully dissolves away for the next item */
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Hidden captions fix: ensures inner slide text elements stay hidden if desired */
+#myCarousel .carousel-caption {
+    display: none !important;
+}
+
+
+@keyframes slideFamilyTogether {
+    0% {
+        opacity: 0;
+        letter-spacing: -15px !important;
+        padding-left: 0px !important;
+        transform: translate3d(-100px, 0, 0) scale(0.95) !important;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: normal !important;
+        padding-left: 50px !important; /* Forces the entire block to shift right on arrival */
+        transform: translate3d(0, 0, 0) scale(1) !important;
+    }
+}
+
+.overlay-content {
+    max-width: 600px !important;
+    color: #ffffff !important;
+    pointer-events: auto !important;
+    display: inline-block !important; /* Converts it away from standard flex constraints */
+    
+    opacity: 0;
+    animation: slideFamilyTogether 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards !important;
+}
