@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.service-heading{
+  background-color: darkgreen;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+ 
+}
+
+.service-heading h5{
+  color: #e09e22;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 20px !important;
+}
+
+.service-heading h2{
+  color: white;
+  font-size: 38px;
+  font-family:'Great Vibes, cursive !important';
+  font-weight: 600;
+}
+
+.service-heading p{
+   color:bisque;
+  font-size: 16px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.service-grid{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 70px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+   background-color:rgb(250, 243, 234);
+}
+
+.service-card{
+  display: block !important;
+  flex-direction: row-reverse !important; 
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eadecc;
+  height: 580px; 
+  width: 400px;
+ 
+}
+
+.service-card:hover{
+   transform: translateY(-4px) !important;
+}
+
+.service-image{
+  flex: 0 0 250px !important;
+  height: 280px;
+}
+
+.service-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.service-details{
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-title{
+  font-family: 'Cinzel', serif;;
+  font-size: 20px;
+  font-weight: bold;
+  color: #114c33;
+  margin: 3px 0;
+}
+
+.service-description{
+    font-size: 14px;
+  color: rgb(19, 84, 19);
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.5px;
+}
+
+.service-list{
+   color: rgb(19, 84, 19);
+}
+
+.trigger-quote-modal-btn{
+  display: block !important;
+  background-color: #e59b3c;
+  color: #114c33;
+  text-align: center !important;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+  max-width: 200px;
+  margin: 15px auto 0 auto !important;
+}
+
+.trigger-quote-modal-btn:hover{
+   background-color: #e47637;
+  color: #114c33;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(192, 92, 35, 0.3); 
+}
